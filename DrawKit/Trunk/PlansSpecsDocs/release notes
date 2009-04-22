@@ -1,0 +1,206 @@
+Release 1.0 beta 3
+May 15th, 2008
+
+This is the third major beta release of DrawKit. This may be the last beta before an actual 1.0 release, or release candidate, depending on whether any further significant bugs
+are found and need to be fixed. While there have been a few substantial changes from beta 2 to 3, this is a much smaller change than from 1 to 2, and represents more of a polishing
+of the API and framework overall. This also incorporates some useful optimizations so should show better performance generally.
+
+1. Bugfixes - too many to list, but all of the KVO-related issues have been addressed (e.g. occasional deallocation of observed objects without de-observing them, etc).
+The KVO-handling methods in DKRasterizer, DKRastGroup, DKStyle and GCObservableObject have been simplified to make it more obvious how these work and make them easier
+to use by client code.
+
+2. Cleaner ownership/containment of drawable objects - now there is only "container" which can be a layer, group or other object that supports the requisite informal protocols.
+
+3. Redesigned hit-testing of graphics now no longer needs to cache entire bitmaps of objects, but creates far smaller ones on the fly as needed. This boosts performance and
+significantly lowers the memory footprint for large drawings. Bitmaps are still created lazily and additional optimizations make this "even lazier" - it is not done for some
+cases that were formerly triggering bitmap creation.
+
+4. Optimization of selection marquee (rect) drawing now does far fewer drawing updates, greatly boosting performance when selecting large areas or many objects.
+
+5. Select/Edit tool now implements copy on drag (+option key)
+
+6. Demo application has more polished/enhanced interfaces for Layers, Object Inspector, Style Inspector; fixes numerous bugs with keeping UI in synch after documuments are closed,
+application resumes, undo is invoked and so forth.
+
+7. Selection colour is now used for default info-window background colour, so reinforcing the colour-coding of layers when objects are manipulated within them. Other layers
+types such as DKGuideLayer also implement the "selection" colour methods to help provide a unified API for the benefit of UI code. The demo for example now allows the colour to
+be set via its list-based interface. DKKnob now honours a passed-in colour in its userInfo dict, wich by default is set to the same selection colour of the layer. Thus knobs
+now have the layer's colour for some types.
+
+8. DKDrawingTool now implements a -set method which provides yet another way to set a tool as current, making this really simple if you already have a tool object. Reversion to
+the "Select" tool now first checks for a tool in the registry called "Select" allowing you a very easy way to supply a different tool as the default, if required. DKToolController
+is now smarter about calling super's mouseDown/dragged/up methods - they are NOT called if the active layer is one that can respond to a tool and there is a tool set. The
+view controller thus factors additional methods to allow subclasses to call them in a more fine-grained manner. 
+
+9. DKDrawingTool can now have a keyboard equivalent set, and if the tool is registered, DKToolController is able to select the tool when it receives a matching keyboard
+sequence. Drawing tools now validate the target layer ahead of any calls from the tool controller, so can make a decision about whether they apply in the current active layer
+context. Previously this decision was made by the tool controller which wasn't very flexible. Immediate upshot - zoom tool always works, even if active layer is hidden, locked
+or not even set.
+
+10. DKLayerGroups now store their layers the opposite way around from earlier versions. This has no effect on the API as such but permits table-based user interfaces to the
+layers to work naturally (i.e. the top layer is at the top of the list) without extra code being needed to flip it up the other way. Also, locking a DKLayerGroup prevents
+layers from being added, removed or moved. Undo for add and remove now restores the layer's original Z-position.
+
+11. Object layers can now cache their content offscreen when they're inactive, which may help speed drawing. This is more beneficial if your layers are complex or you have
+a lot of them - you might need to experiment with rendering times to see what settings work best for your particular cases. Other performance-oriented changes include using
+less smooth paths and "fake" shadows during low quality rendering. You can also experiment with performing rendering on a secondary thread though at present this is highly
+experimental and not recommended for production code (it can be turned on/off with a single flag).
+
+12. You can now drop text directly into an object layer to make a text object (enhances the existing feature that supports images).
+
+13. Creation tools are now completely accurate when creating shapes - previously there was a small placement error that only became noticeable at higher zoom factors, but nevertheless
+was real, in that it altered the width by a few fractions of a point. Now all tools are absolutely spot-on accurate.
+
+14. Added a "concentric duplication" method to the duplication category. The Demo currently doesn't provide a UI to this.
+
+15. The wedge-style path fixed to actually work (while there's no tool button in the demo's palette for the wedge, you can still select the wedge tool by typing 'w').
+
+16. Selection undos changed so that if selection undo is turned OFF, the selection state is still remembered by undo but only if it accompanies another action. This is much more
+useful than either of the previous two ways of handling this, and is now the default.
+
+17. DKTextAdornment adds an additional layout mode that flows text within any arbitrary path or shape. Text angle can be linked to the object or not (but not independently set
+currently) and the vertical placement is ignored in this mode. An additional parameter controls that inset of the text from the shape edge.
+
+Release 1.0 beta 2
+April 14th, 2008
+
+
+This is the second major beta release of DrawKit (a.k.a. GCDrawKit). This file outlines some of the major differences from beta 1.
+
+1. Class names
+
+Many classes have been renamed. The reason is to standardise on the 'DK' prefix instead of the 'GC' prefix which is used for classes that are not exclusive to DrawKit.
+In addition many class names have been simplified, since the name was being changed anyway. For example, GCDrawingLayer is now DKLayer. This is likely to be the
+single most painful change for applications using DrawKit, because wherever you have made a reference to a DK class, you will have to change the name. However it is
+better to make this change now while the user base is small, and this definitely won't happen again.
+
+In general, classes that were prefixed 'GC' are now prefixed 'DK'. The following classes have been renamed more substantially:
+
+old name					new name
+
+GCDrawingLayer				DKLayer
+GCDrawingStyle				DKStyle
+GCGridDrawingLayer			DKGridLayer
+GCRenderer					DKRasterizer
+GCDrawableShapeWithReshape	DKReshapableShape
+GCRendererGroup				DKRastGroup
+GCEffectRenderGroup			DKCIFilterRastGroup
+GCBlendRenderGroup			DKQuartzBlendRastGroup
+GCImageRenderer				DKImageAdornment
+GCTextLabelRenderer			DKTextAdornment
+GCDrawDocument				DKDrawingDocument
+
+In general the newer names are meant to be more descriptive, and wherever possible, shorter.
+
+A few 'GC' prefixed classes remain part of DrawKit. These indicate classes that are general in nature that are also used in other projects.
+
+1a. File compatibility.
+
+DK beta 2, like beta 1, uses Cocoa's keyed archiving mechanism to save and read files. Because of the class name changes, classes that are
+referenced in older files are automatically translated to the new names, so for most files you should find they will be readable. Re-saving the files will convert them
+to use all newer classes and any additional keys. It has not been possible to maintain 100% backward compatibility with beta 1 files for all classes, but in most cases
+files will be readable with some minor loss of functionality.
+
+Note that DKGradient is still method-compatible with GCGradient so the classes can be used interchangeably. This allows a DK project to also use the Gradient Panel
+user interface without the two frameworks clashing (because they no longer contain classes of the same name).
+
+2. Architecture
+
+DrawKit's architecture has not been dramatically changed though better partitioning into model, view and controller classes has been done. In particular the controller
+layer is now explicit, with the classes DKViewController and its subclass DKToolController collecting functionality that previously was divided between the view
+(DKDrawingView) and different layer classes. As a result, the layer class GCObjectDrawingToolLayer is no longer required - the DKToolController manipulates the
+generic DKObjectDrawingLayer class instead. All tools are considered part of the controller layer.
+
+The selection and editing tool is now implemented by a specific class - DKSelectAndEditTool, rather then being the base behaviour when a nil tool was set. This makes
+it much easier to replace this functionality if required, as well as keeping the code more manageable. The overall tool protocol has been enhanced to allow creation of
+a wider variety of tools - for example there is now a zoom tool which apart from being useful in its own right demonstrates how a non-data editing tool can be made.
+
+Previously DKDrawing maintained a list of its attached views. Now the drawing keeps a list of the attached controllers, and the ownership of objects is now unambiguous -
+views are owned by their superviews (and ultimately their windows) like any NSView, and the controllers are owned by the drawing. In turn the drawing may be owned by
+a document, a view or any other appropriate object without introducing retain cycles. Thus for the case of automatic "back-end" creation, the view owns the drawing
+without a problem being caused by the drawing owning the view. It also no longer matters what order objects are released in - whether the drawing or the view is dealloced
+first, the view controller is correctly dealt with.
+
+DKDrawingView hosts a convenience method for making a controller - it creates DKToolControllers by default.
+
+If your code was forming connections between views and drawing, it will now need to make a controller and add that to the drawing instead. If you are using
+DKDrawDocument as a basis for your own document class this already has been modified to work with the new controllers. One advantage of DKToolController over the older
+design is that tools can now be set globally (per-app), per-document, or per-view as your application requires. The default is per-document.
+
+2a. Layers
+
+Layers can now be grouped hierarchically instead of in a flat list. DKLayerGroup is a layer type that can contain other layers. DKDrawing is now a subclass of it. Note
+that the demo UI currently only displays a flat list as before. The existence of layer groups does not substantially change the basic concepts of DK - that there is
+a DKDrawing which is the root of the layer hierarchy and one nominated active layer at a time. As before all layers inherit the drawing's overall size and have no
+inherent location of their own.
+
+DKKnob, a helper class used to draw the selection "handles" on objects, can now be set at the layer level if desired (or at the drawing level, as before, and by
+default). In addition it has been rewritten and factored to make customisation of the knob appearance much easier.
+
+3. Style consolidation
+
+When a document is loaded from a file, any registered styles used by that document need to be reconciled with the current style registry. Previously this was achieved by
+something of a hack that didn't really work well and was not easily customised. DK beta 2 reworks the style consolidation into a properly-designed scheme that can be
+controlled easily. The registry is now embodied in a separate class - DKStyleRegistry - rather than as class methods on DKStyle. DKDrawingDocument coordinates the
+top level sequencing of the reconsolidation process, where you can override it. If you are not using DKDrawingDocument, you will have to deal with this issue using the
+lower level methods provided (or not bother - many apps will not need to consider this issue).
+
+4. Style scripts
+
+Style scripts are still supported but are proving to be of less practical use than originally envisaged. As new rasterizers have been added, scripting support has not
+kept pace with these newer classes. In practice it is much easier to use the GUI in the DK Demo application to build styles from components than it is to work out
+scripts, and given that you can now save entire sets of styles directly to a file and load them into your own apps it's likely this will be by far the easiest way to
+do it. Thus scripting is going to take a back seat for constructing styles beyond the more basic ones going forward. Scripting is also unable to deal with the con-
+solidation issue discussed above because the issue wasn't recognised when the scripting was originally developed.
+
+5. New rasterizers
+
+New rasterizers (a.k.a. renderers) have been added, namely:
+
+DKZigZagStroke
+DKRoughStroke
+DKZigZagFill
+
+In addition DKArrowStroke has been rewritten to make specifying arrows much more straightforward and more versatile. One downside is that older files containing arrows
+will not load completely intact - you will need to revisit any arrow objects and select the correct head types.
+
+DKFillPattern has additional settings and behaviours to make it more versatile and useful.
+
+6. Localization
+
+All strings that end up in the UI (mostly undo strings and a few menu items) are now localizable. Previously some were and some were not.
+
+7. Drag and Drop.
+
+D+D has been substantially improved with any layer now able to respond to the NSDraggingDestination protocol simply by implementing it as if it were a view. The standard
+object layers now allow individual objects with the active layer to be targeted by a drag and the default objects repond in an appropriate way to may drag types,
+such as colours, text and images. New methods have been provided to easily specify what types an object can receive.
+
+Some objects such as shapes also have some handy new methods for pasting properties of other objects (like paths) into them.
+
+8. Optimization and improvement
+
+Naturally there have been many hundreds of bug fixes since beta 1. In addition some of the slower classes have had some optimization work done to ensure that they perform better.
+The drawing quality modulation feature now applies to shadow objects, which are one of the main graphics hogs, espcially when an image is zoomed in.
+
+9. Source organisation
+
+Sources have been organised better both on disk, within the Xcode project, and within each file. On disk, the standard recommended layout for SVN repositories has been
+adopted. Within Xcode, new groups have been added to help clarify which parts of the MVC model each class belong to, and many more besides. Each source file has also
+been reordered and labelled so that which methods are inherited from where are obvious at a glance.
+
+Third party code is now listed separately and can be conditionally compiled in or out using some simple config flags as required. This makes dropping third-party
+code that is subject to different licensing conditions very easy - just undefine the flags in DKDrawKit_Prefix.pch
+
+Building against the 10.4 or 10.5 SDKs is now just a case of picking the build you want from the "Active Build Configuration" menu. Note that while linking against the
+10.5 SDK is possible, there are functional differences that cause problems at this time. DK does not require any 10.5 functionality, so for the time being it is
+recommended to only build against the 10.4 Universal SDK. This in no way prevents your application that links to DrawKit from linking to and using features in the
+Leopard SDK.
+
+DrawKit beta 2 requires Xcode 3.0 or later and Interface Builder 3.0 or later.
+
+10. The Demo Application
+
+The demo has been cleaned up somewhat and its user interface generally polished. It allows most DK features to be explored within a general-purpose drawing environment.
+However, it is NOT a drawing program and should not be judged as one. It is there purely to explore DK features.
+

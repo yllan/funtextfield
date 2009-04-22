@@ -1,0 +1,1144 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC310486D014006FF6A4 /* GCDrawDemoDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* GCDrawDemoDocument.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		965B6AD00C28ACDB00FFCC95 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965B6ACF0C28ACDB00FFCC95 /* QuartzCore.framework */; };
+		96F5177E0B8A72760047BA96 /* GCDrawKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F5177B0B8A72760047BA96 /* GCDrawKitAppDelegate.m */; };
+		AA206DD40D90A0E6003205BD /* GCDrawDemoDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA206DD20D90A0E6003205BD /* GCDrawDemoDocument.xib */; };
+		AA7431D40D80FF3D0013CA82 /* DKGraphicInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7431D20D80FF3D0013CA82 /* DKGraphicInspector.xib */; };
+		AA7431D80D80FF830013CA82 /* Drawingsize.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7431D60D80FF830013CA82 /* Drawingsize.xib */; };
+		AA7431E20D8101230013CA82 /* LayersPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7431E00D8101230013CA82 /* LayersPalette.xib */; };
+		AA7431E50D81015B0013CA82 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7431E30D81015B0013CA82 /* MainMenu.xib */; };
+		AA7431EB0D8101660013CA82 /* ObjectInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7431E90D8101660013CA82 /* ObjectInspector.xib */; };
+		AA7431EE0D81016B0013CA82 /* StyleInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7431EC0D81016B0013CA82 /* StyleInspector.xib */; };
+		AA7431F10D8101720013CA82 /* StyleManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7431EF0D8101720013CA82 /* StyleManager.xib */; };
+		AA7431F40D8101790013CA82 /* ToolPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7431F20D8101790013CA82 /* ToolPalette.xib */; };
+		AA80733E0DA4951B005BCAA0 /* DrawDemo.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */; };
+		AA8073660DA49912005BCAA0 /* DrawDemoInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA8073650DA49912005BCAA0 /* DrawDemoInfo.plist */; };
+		AA89A4630D7E03E70092F050 /* GCDrawKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA89A45E0D7E03B90092F050 /* GCDrawKit.framework */; };
+		AA89A4B10D7E0D2D0092F050 /* GCDrawKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA89A45E0D7E03B90092F050 /* GCDrawKit.framework */; };
+		BF58D0060C7526A6009B85CC /* DKGradientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFE20C7526A6009B85CC /* DKGradientCell.m */; };
+		BF58D0080C7526A6009B85CC /* GCColourPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFE40C7526A6009B85CC /* GCColourPickerView.m */; };
+		BF58D00A0C7526A6009B85CC /* GCGradientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFE60C7526A6009B85CC /* GCGradientCell.m */; };
+		BF58D00E0C7526A6009B85CC /* GCGradientPasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFEA0C7526A6009B85CC /* GCGradientPasteboard.m */; };
+		BF58D0100C7526A6009B85CC /* GCGradientWell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFEC0C7526A6009B85CC /* GCGradientWell.m */; };
+		BF58D0120C7526A6009B85CC /* GCMiniCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFEE0C7526A6009B85CC /* GCMiniCircularSlider.m */; };
+		BF58D0140C7526A6009B85CC /* GCMiniControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFF00C7526A6009B85CC /* GCMiniControl.m */; };
+		BF58D0160C7526A6009B85CC /* GCMiniControlCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFF20C7526A6009B85CC /* GCMiniControlCluster.m */; };
+		BF58D0180C7526A6009B85CC /* GCMiniRadialControl2.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFF40C7526A6009B85CC /* GCMiniRadialControl2.m */; };
+		BF58D01A0C7526A6009B85CC /* GCMiniRadialControls.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFF60C7526A6009B85CC /* GCMiniRadialControls.m */; };
+		BF58D01C0C7526A6009B85CC /* GCMiniSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFF80C7526A6009B85CC /* GCMiniSlider.m */; };
+		BF58D01E0C7526A6009B85CC /* GCSpecialColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFFA0C7526A6009B85CC /* GCSpecialColorWell.m */; };
+		BF58D0200C7526A6009B85CC /* GCWindowMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFFC0C7526A6009B85CC /* GCWindowMenu.m */; };
+		BF58D0220C7526A6009B85CC /* NSBezierPath+GCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58CFFE0C7526A6009B85CC /* NSBezierPath+GCAdditions.m */; };
+		BF58D0240C7526A6009B85CC /* NSFolderManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58D0000C7526A6009B85CC /* NSFolderManagerAdditions.m */; };
+		BF58D0260C7526A6009B85CC /* WTGradientControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58D0020C7526A6009B85CC /* WTGradientControl.m */; };
+		BF58D0280C7526A6009B85CC /* WTPlistKeyValueCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58D0040C7526A6009B85CC /* WTPlistKeyValueCoding.m */; };
+		BF700E1F0BF6B59F00080B21 /* GCStyleInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = BF700E1D0BF6B59F00080B21 /* GCStyleInspector.m */; };
+		BF7010AE0BF7122600080B21 /* smallBlueKnob.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BF7010AD0BF7122600080B21 /* smallBlueKnob.tiff */; };
+		BF7010B00BF7122E00080B21 /* NSColorWheelImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BF7010AF0BF7122E00080B21 /* NSColorWheelImage.tiff */; };
+		BF7012C00BF7FDB800080B21 /* plus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7012BE0BF7FDB800080B21 /* plus-8.png */; };
+		BF7012C10BF7FDB800080B21 /* minus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7012BF0BF7FDB800080B21 /* minus-8.png */; };
+		BF7019420BFD8A3900080B21 /* GCDashEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7019400BFD8A3900080B21 /* GCDashEditor.m */; };
+		BF701A0C0BFDAAD800080B21 /* GCDashEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF701A0A0BFDAAD800080B21 /* GCDashEditView.m */; };
+		BF701D520C002C2E00080B21 /* gear.tif in Resources */ = {isa = PBXBuildFile; fileRef = BF701D510C002C2E00080B21 /* gear.tif */; };
+		BF8726580D91E3FC001F09AC /* GCDrawDemoPrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8726560D91E3FC001F09AC /* GCDrawDemoPrefsController.m */; };
+		BF87265B0D91E53B001F09AC /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8726590D91E53B001F09AC /* Preferences.xib */; };
+		BF88FC9D0C1D0CA100A23755 /* GCToolPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = BF88FC9B0C1D0CA100A23755 /* GCToolPalette.m */; };
+		BF88FD6F0C1D5FB100A23755 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD6E0C1D5FB100A23755 /* Rectangle.png */; };
+		BF88FD720C1D606300A23755 /* Oval.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD710C1D606300A23755 /* Oval.png */; };
+		BF88FD780C1D618800A23755 /* Round Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD770C1D618800A23755 /* Round Rectangle.png */; };
+		BF88FD7B0C1D621B00A23755 /* Round End Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD7A0C1D621B00A23755 /* Round End Rectangle.png */; };
+		BF88FD7E0C1D62A000A23755 /* Polygon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD7D0C1D62A000A23755 /* Polygon.png */; };
+		BF88FD800C1D630A00A23755 /* Line.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD7F0C1D630A00A23755 /* Line.png */; };
+		BF88FD830C1D63CC00A23755 /* Path.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD820C1D63CC00A23755 /* Path.png */; };
+		BF88FD860C1D645200A23755 /* Ring.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD850C1D645200A23755 /* Ring.png */; };
+		BF88FD890C1D64F200A23755 /* Text.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD880C1D64F200A23755 /* Text.png */; };
+		BF88FD8C0C1D655900A23755 /* Speech Balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD8B0C1D655900A23755 /* Speech Balloon.png */; };
+		BF88FD8F0C1D662100A23755 /* Freehand.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD8E0C1D662100A23755 /* Freehand.png */; };
+		BF88FD920C1D670400A23755 /* Select.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD910C1D670400A23755 /* Select.png */; };
+		BF88FD950C1D67F600A23755 /* Insert Path Point.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD940C1D67F600A23755 /* Insert Path Point.png */; };
+		BF88FD970C1D680500A23755 /* Delete Path Point.png in Resources */ = {isa = PBXBuildFile; fileRef = BF88FD960C1D680500A23755 /* Delete Path Point.png */; };
+		BF95157B0DBB6E03009E8CEC /* RSVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF95157A0DBB6E03009E8CEC /* RSVerticallyCenteredTextFieldCell.m */; };
+		BF9517A40DBCC4EE009E8CEC /* menu_triangle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9517A30DBCC4EE009E8CEC /* menu_triangle.tiff */; };
+		BF9517D40DBCCA07009E8CEC /* locked_symbol.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BF9517D30DBCCA07009E8CEC /* locked_symbol.tiff */; };
+		BFA9670A0D7580BC00D976CB /* GCBasicDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA967080D7580BC00D976CB /* GCBasicDialogController.m */; };
+		BFAA66490DBEDDE500EE8236 /* GCOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA66480DBEDDE500EE8236 /* GCOutlineView.m */; };
+		BFBFD0A00D9A4B2000680E6B /* mag_minus.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BFBFD09E0D9A4B2000680E6B /* mag_minus.tiff */; };
+		BFBFD0A10D9A4B2000680E6B /* mag_plus.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BFBFD09F0D9A4B2000680E6B /* mag_plus.tiff */; };
+		BFDB10EE0C2AACC20034C27C /* Arc.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BFDB10ED0C2AACC20034C27C /* Arc.pdf */; };
+		BFDB12450C2B81630034C27C /* GCPolarDuplicateController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB12430C2B81630034C27C /* GCPolarDuplicateController.m */; };
+		BFEAF52C0DAE31FB002972BC /* dkicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BFEAF52B0DAE31FB002972BC /* dkicon.icns */; };
+		BFEAF5430DAE3586002972BC /* dkdocument.icns in Resources */ = {isa = PBXBuildFile; fileRef = BFEAF5420DAE3586002972BC /* dkdocument.icns */; };
+		BFF06B200C3892F3008D427F /* DrawingSizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF06B1E0C3892F3008D427F /* DrawingSizeController.m */; };
+		BFF06D350C3B5204008D427F /* GCObjectInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF06D330C3B5204008D427F /* GCObjectInspector.m */; };
+		BFF071670C3FAE8D008D427F /* GCDrawDemoDocument+TimelineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF071650C3FAE8D008D427F /* GCDrawDemoDocument+TimelineLayout.m */; };
+		BFF08D5D0C583808008D427F /* GCLayersPaletteController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF08D5B0C583808008D427F /* GCLayersPaletteController.m */; };
+		BFF08EC60C58CE4A008D427F /* GCStyleManagerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF08EC40C58CE4A008D427F /* GCStyleManagerDialog.m */; };
+		BFF090960C5C4ECF008D427F /* GCCheckboxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF090940C5C4ECF008D427F /* GCCheckboxCell.m */; };
+		BFF090B50C5C53C6008D427F /* GCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF090B30C5C53C6008D427F /* GCTableView.m */; };
+		BFFC4F710DA0F9E1003E1655 /* square.tif in Resources */ = {isa = PBXBuildFile; fileRef = BFFC4F6E0DA0F9E1003E1655 /* square.tif */; };
+		BFFC4F720DA0F9E1003E1655 /* round.tif in Resources */ = {isa = PBXBuildFile; fileRef = BFFC4F6F0DA0F9E1003E1655 /* round.tif */; };
+		BFFC4F730DA0F9E1003E1655 /* butt.tif in Resources */ = {isa = PBXBuildFile; fileRef = BFFC4F700DA0F9E1003E1655 /* butt.tif */; };
+		BFFC4F850DA0FF95003E1655 /* squarecorner.tif in Resources */ = {isa = PBXBuildFile; fileRef = BFFC4F820DA0FF95003E1655 /* squarecorner.tif */; };
+		BFFC4F860DA0FF95003E1655 /* roundcorner.tif in Resources */ = {isa = PBXBuildFile; fileRef = BFFC4F830DA0FF95003E1655 /* roundcorner.tif */; };
+		BFFC4F8F0DA1048B003E1655 /* bevelcorner.tif in Resources */ = {isa = PBXBuildFile; fileRef = BFFC4F8E0DA1048B003E1655 /* bevelcorner.tif */; };
+		BFFC4FC30DA19786003E1655 /* GCLinearDuplicateController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFC4FC20DA19786003E1655 /* GCLinearDuplicateController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA89A45D0D7E03B90092F050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA89A4550D7E03B90092F050 /* DrawKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9660E6100BEF442B00B6A38C;
+			remoteInfo = DrawKit;
+		};
+		AA89A4610D7E03D00092F050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA89A4550D7E03B90092F050 /* DrawKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = DrawKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA89A27A0D7DCB800092F050 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA89A4630D7E03E70092F050 /* GCDrawKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* GCDrawDemoDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDrawDemoDocument.m; path = Code/GCDrawDemoDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* GCDrawDemoDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDrawDemoDocument.h; path = Code/GCDrawDemoDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Code/main.m; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = Resources/English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* DrawDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawDemo_Prefix.pch; path = Code/DrawDemo_Prefix.pch; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* GCDrawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDrawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		965B6ACF0C28ACDB00FFCC95 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		96F5177A0B8A72760047BA96 /* GCDrawKitAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GCDrawKitAppDelegate.h; path = Code/GCDrawKitAppDelegate.h; sourceTree = "<group>"; };
+		96F5177B0B8A72760047BA96 /* GCDrawKitAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GCDrawKitAppDelegate.m; path = Code/GCDrawKitAppDelegate.m; sourceTree = "<group>"; };
+		AA206DD30D90A0E6003205BD /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/GCDrawDemoDocument.xib; sourceTree = "<group>"; };
+		AA7431D30D80FF3D0013CA82 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/DKGraphicInspector.xib; sourceTree = "<group>"; };
+		AA7431D70D80FF830013CA82 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/Drawingsize.xib; sourceTree = "<group>"; };
+		AA7431E10D8101230013CA82 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/LayersPalette.xib; sourceTree = "<group>"; };
+		AA7431E40D81015B0013CA82 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AA7431EA0D8101660013CA82 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/ObjectInspector.xib; sourceTree = "<group>"; };
+		AA7431ED0D81016B0013CA82 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/StyleInspector.xib; sourceTree = "<group>"; };
+		AA7431F00D8101720013CA82 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/StyleManager.xib; sourceTree = "<group>"; };
+		AA7431F30D8101790013CA82 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/ToolPalette.xib; sourceTree = "<group>"; };
+		AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DrawDemo.xcconfig; sourceTree = "<group>"; };
+		AA8073650DA49912005BCAA0 /* DrawDemoInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DrawDemoInfo.plist; sourceTree = "<group>"; };
+		AA89A4550D7E03B90092F050 /* DrawKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DrawKit.xcodeproj; path = ../../../DrawKit/Trunk/Source/DrawKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		BF58CFE10C7526A6009B85CC /* DKGradientCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DKGradientCell.h; sourceTree = "<group>"; };
+		BF58CFE20C7526A6009B85CC /* DKGradientCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DKGradientCell.m; sourceTree = "<group>"; };
+		BF58CFE30C7526A6009B85CC /* GCColourPickerView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCColourPickerView.h; sourceTree = "<group>"; };
+		BF58CFE40C7526A6009B85CC /* GCColourPickerView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCColourPickerView.m; sourceTree = "<group>"; };
+		BF58CFE50C7526A6009B85CC /* GCGradientCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCGradientCell.h; sourceTree = "<group>"; };
+		BF58CFE60C7526A6009B85CC /* GCGradientCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCGradientCell.m; sourceTree = "<group>"; };
+		BF58CFE90C7526A6009B85CC /* GCGradientPasteboard.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCGradientPasteboard.h; sourceTree = "<group>"; };
+		BF58CFEA0C7526A6009B85CC /* GCGradientPasteboard.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCGradientPasteboard.m; sourceTree = "<group>"; };
+		BF58CFEB0C7526A6009B85CC /* GCGradientWell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCGradientWell.h; sourceTree = "<group>"; };
+		BF58CFEC0C7526A6009B85CC /* GCGradientWell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCGradientWell.m; sourceTree = "<group>"; };
+		BF58CFED0C7526A6009B85CC /* GCMiniCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCMiniCircularSlider.h; sourceTree = "<group>"; };
+		BF58CFEE0C7526A6009B85CC /* GCMiniCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCMiniCircularSlider.m; sourceTree = "<group>"; };
+		BF58CFEF0C7526A6009B85CC /* GCMiniControl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCMiniControl.h; sourceTree = "<group>"; };
+		BF58CFF00C7526A6009B85CC /* GCMiniControl.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCMiniControl.m; sourceTree = "<group>"; };
+		BF58CFF10C7526A6009B85CC /* GCMiniControlCluster.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCMiniControlCluster.h; sourceTree = "<group>"; };
+		BF58CFF20C7526A6009B85CC /* GCMiniControlCluster.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCMiniControlCluster.m; sourceTree = "<group>"; };
+		BF58CFF30C7526A6009B85CC /* GCMiniRadialControl2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCMiniRadialControl2.h; sourceTree = "<group>"; };
+		BF58CFF40C7526A6009B85CC /* GCMiniRadialControl2.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCMiniRadialControl2.m; sourceTree = "<group>"; };
+		BF58CFF50C7526A6009B85CC /* GCMiniRadialControls.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCMiniRadialControls.h; sourceTree = "<group>"; };
+		BF58CFF60C7526A6009B85CC /* GCMiniRadialControls.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCMiniRadialControls.m; sourceTree = "<group>"; };
+		BF58CFF70C7526A6009B85CC /* GCMiniSlider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCMiniSlider.h; sourceTree = "<group>"; };
+		BF58CFF80C7526A6009B85CC /* GCMiniSlider.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCMiniSlider.m; sourceTree = "<group>"; };
+		BF58CFF90C7526A6009B85CC /* GCSpecialColorWell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCSpecialColorWell.h; sourceTree = "<group>"; };
+		BF58CFFA0C7526A6009B85CC /* GCSpecialColorWell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCSpecialColorWell.m; sourceTree = "<group>"; };
+		BF58CFFB0C7526A6009B85CC /* GCWindowMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCWindowMenu.h; sourceTree = "<group>"; };
+		BF58CFFC0C7526A6009B85CC /* GCWindowMenu.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCWindowMenu.m; sourceTree = "<group>"; };
+		BF58CFFD0C7526A6009B85CC /* NSBezierPath+GCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+GCAdditions.h"; sourceTree = "<group>"; };
+		BF58CFFE0C7526A6009B85CC /* NSBezierPath+GCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+GCAdditions.m"; sourceTree = "<group>"; };
+		BF58CFFF0C7526A6009B85CC /* NSFolderManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSFolderManagerAdditions.h; sourceTree = "<group>"; };
+		BF58D0000C7526A6009B85CC /* NSFolderManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSFolderManagerAdditions.m; sourceTree = "<group>"; };
+		BF58D0010C7526A6009B85CC /* WTGradientControl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WTGradientControl.h; sourceTree = "<group>"; };
+		BF58D0020C7526A6009B85CC /* WTGradientControl.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WTGradientControl.m; sourceTree = "<group>"; };
+		BF58D0030C7526A6009B85CC /* WTPlistKeyValueCoding.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WTPlistKeyValueCoding.h; sourceTree = "<group>"; };
+		BF58D0040C7526A6009B85CC /* WTPlistKeyValueCoding.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WTPlistKeyValueCoding.m; sourceTree = "<group>"; };
+		BF700E1C0BF6B59F00080B21 /* GCStyleInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCStyleInspector.h; path = Code/GCStyleInspector.h; sourceTree = "<group>"; };
+		BF700E1D0BF6B59F00080B21 /* GCStyleInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCStyleInspector.m; path = Code/GCStyleInspector.m; sourceTree = "<group>"; };
+		BF7010AD0BF7122600080B21 /* smallBlueKnob.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = smallBlueKnob.tiff; path = Resources/Images/smallBlueKnob.tiff; sourceTree = "<group>"; };
+		BF7010AF0BF7122E00080B21 /* NSColorWheelImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = NSColorWheelImage.tiff; path = Resources/Images/NSColorWheelImage.tiff; sourceTree = "<group>"; };
+		BF7012BE0BF7FDB800080B21 /* plus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus-8.png"; path = "Resources/Images/plus-8.png"; sourceTree = "<group>"; };
+		BF7012BF0BF7FDB800080B21 /* minus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "minus-8.png"; path = "Resources/Images/minus-8.png"; sourceTree = "<group>"; };
+		BF70193F0BFD8A3900080B21 /* GCDashEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDashEditor.h; path = Code/GCDashEditor.h; sourceTree = "<group>"; };
+		BF7019400BFD8A3900080B21 /* GCDashEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDashEditor.m; path = Code/GCDashEditor.m; sourceTree = "<group>"; };
+		BF701A090BFDAAD800080B21 /* GCDashEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDashEditView.h; path = Code/GCDashEditView.h; sourceTree = "<group>"; };
+		BF701A0A0BFDAAD800080B21 /* GCDashEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDashEditView.m; path = Code/GCDashEditView.m; sourceTree = "<group>"; };
+		BF701D510C002C2E00080B21 /* gear.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = gear.tif; path = Resources/Images/gear.tif; sourceTree = "<group>"; };
+		BF8726560D91E3FC001F09AC /* GCDrawDemoPrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDrawDemoPrefsController.m; path = Code/GCDrawDemoPrefsController.m; sourceTree = "<group>"; };
+		BF8726570D91E3FC001F09AC /* GCDrawDemoPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDrawDemoPrefsController.h; path = Code/GCDrawDemoPrefsController.h; sourceTree = "<group>"; };
+		BF87265A0D91E53B001F09AC /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Resources/English.lproj/Preferences.xib; sourceTree = "<group>"; };
+		BF88FC9A0C1D0CA100A23755 /* GCToolPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCToolPalette.h; path = Code/GCToolPalette.h; sourceTree = "<group>"; };
+		BF88FC9B0C1D0CA100A23755 /* GCToolPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCToolPalette.m; path = Code/GCToolPalette.m; sourceTree = "<group>"; };
+		BF88FD6E0C1D5FB100A23755 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rectangle.png; path = Resources/Images/Rectangle.png; sourceTree = "<group>"; };
+		BF88FD710C1D606300A23755 /* Oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Oval.png; path = Resources/Images/Oval.png; sourceTree = "<group>"; };
+		BF88FD770C1D618800A23755 /* Round Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Round Rectangle.png"; path = "Resources/Images/Round Rectangle.png"; sourceTree = "<group>"; };
+		BF88FD7A0C1D621B00A23755 /* Round End Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Round End Rectangle.png"; path = "Resources/Images/Round End Rectangle.png"; sourceTree = "<group>"; };
+		BF88FD7D0C1D62A000A23755 /* Polygon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Polygon.png; path = Resources/Images/Polygon.png; sourceTree = "<group>"; };
+		BF88FD7F0C1D630A00A23755 /* Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Line.png; path = Resources/Images/Line.png; sourceTree = "<group>"; };
+		BF88FD820C1D63CC00A23755 /* Path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Path.png; path = Resources/Images/Path.png; sourceTree = "<group>"; };
+		BF88FD850C1D645200A23755 /* Ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ring.png; path = Resources/Images/Ring.png; sourceTree = "<group>"; };
+		BF88FD880C1D64F200A23755 /* Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Text.png; path = Resources/Images/Text.png; sourceTree = "<group>"; };
+		BF88FD8B0C1D655900A23755 /* Speech Balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Balloon.png"; path = "Resources/Images/Speech Balloon.png"; sourceTree = "<group>"; };
+		BF88FD8E0C1D662100A23755 /* Freehand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Freehand.png; path = Resources/Images/Freehand.png; sourceTree = "<group>"; };
+		BF88FD910C1D670400A23755 /* Select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Select.png; path = Resources/Images/Select.png; sourceTree = "<group>"; };
+		BF88FD940C1D67F600A23755 /* Insert Path Point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Insert Path Point.png"; path = "Resources/Images/Insert Path Point.png"; sourceTree = "<group>"; };
+		BF88FD960C1D680500A23755 /* Delete Path Point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Delete Path Point.png"; path = "Resources/Images/Delete Path Point.png"; sourceTree = "<group>"; };
+		BF9515790DBB6E03009E8CEC /* RSVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSVerticallyCenteredTextFieldCell.h; path = Code/RSVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		BF95157A0DBB6E03009E8CEC /* RSVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSVerticallyCenteredTextFieldCell.m; path = Code/RSVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
+		BF9517A30DBCC4EE009E8CEC /* menu_triangle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = menu_triangle.tiff; path = Resources/Images/menu_triangle.tiff; sourceTree = "<group>"; };
+		BF9517D30DBCCA07009E8CEC /* locked_symbol.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = locked_symbol.tiff; path = Resources/Images/locked_symbol.tiff; sourceTree = "<group>"; };
+		BFA967080D7580BC00D976CB /* GCBasicDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCBasicDialogController.m; path = Code/GCBasicDialogController.m; sourceTree = "<group>"; };
+		BFA967090D7580BC00D976CB /* GCBasicDialogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCBasicDialogController.h; path = Code/GCBasicDialogController.h; sourceTree = "<group>"; };
+		BFAA66470DBEDDE500EE8236 /* GCOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCOutlineView.h; path = Code/GCOutlineView.h; sourceTree = "<group>"; };
+		BFAA66480DBEDDE500EE8236 /* GCOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCOutlineView.m; path = Code/GCOutlineView.m; sourceTree = "<group>"; };
+		BFBFD09E0D9A4B2000680E6B /* mag_minus.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = mag_minus.tiff; path = Resources/Images/mag_minus.tiff; sourceTree = "<group>"; };
+		BFBFD09F0D9A4B2000680E6B /* mag_plus.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = mag_plus.tiff; path = Resources/Images/mag_plus.tiff; sourceTree = "<group>"; };
+		BFDB10ED0C2AACC20034C27C /* Arc.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Arc.pdf; path = Resources/Images/Arc.pdf; sourceTree = "<group>"; };
+		BFDB12430C2B81630034C27C /* GCPolarDuplicateController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GCPolarDuplicateController.m; path = Code/GCPolarDuplicateController.m; sourceTree = "<group>"; };
+		BFDB12440C2B81630034C27C /* GCPolarDuplicateController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GCPolarDuplicateController.h; path = Code/GCPolarDuplicateController.h; sourceTree = "<group>"; };
+		BFEAF52B0DAE31FB002972BC /* dkicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = dkicon.icns; path = Resources/Images/dkicon.icns; sourceTree = "<group>"; };
+		BFEAF5420DAE3586002972BC /* dkdocument.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = dkdocument.icns; path = Resources/Images/dkdocument.icns; sourceTree = "<group>"; };
+		BFF06B1D0C3892F3008D427F /* DrawingSizeController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DrawingSizeController.h; path = Code/DrawingSizeController.h; sourceTree = "<group>"; };
+		BFF06B1E0C3892F3008D427F /* DrawingSizeController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = DrawingSizeController.m; path = Code/DrawingSizeController.m; sourceTree = "<group>"; };
+		BFF06D330C3B5204008D427F /* GCObjectInspector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GCObjectInspector.m; path = Code/GCObjectInspector.m; sourceTree = "<group>"; };
+		BFF06D340C3B5204008D427F /* GCObjectInspector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GCObjectInspector.h; path = Code/GCObjectInspector.h; sourceTree = "<group>"; };
+		BFF071640C3FAE8D008D427F /* GCDrawDemoDocument+TimelineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GCDrawDemoDocument+TimelineLayout.h"; path = "Code/GCDrawDemoDocument+TimelineLayout.h"; sourceTree = "<group>"; };
+		BFF071650C3FAE8D008D427F /* GCDrawDemoDocument+TimelineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GCDrawDemoDocument+TimelineLayout.m"; path = "Code/GCDrawDemoDocument+TimelineLayout.m"; sourceTree = "<group>"; };
+		BFF08D5A0C583808008D427F /* GCLayersPaletteController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GCLayersPaletteController.h; path = Code/GCLayersPaletteController.h; sourceTree = "<group>"; };
+		BFF08D5B0C583808008D427F /* GCLayersPaletteController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GCLayersPaletteController.m; path = Code/GCLayersPaletteController.m; sourceTree = "<group>"; };
+		BFF08EC30C58CE4A008D427F /* GCStyleManagerDialog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GCStyleManagerDialog.h; path = Code/GCStyleManagerDialog.h; sourceTree = "<group>"; };
+		BFF08EC40C58CE4A008D427F /* GCStyleManagerDialog.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GCStyleManagerDialog.m; path = Code/GCStyleManagerDialog.m; sourceTree = "<group>"; };
+		BFF090930C5C4ECF008D427F /* GCCheckboxCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GCCheckboxCell.h; path = Code/GCCheckboxCell.h; sourceTree = "<group>"; };
+		BFF090940C5C4ECF008D427F /* GCCheckboxCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GCCheckboxCell.m; path = Code/GCCheckboxCell.m; sourceTree = "<group>"; };
+		BFF090B20C5C53C6008D427F /* GCTableView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GCTableView.h; path = Code/GCTableView.h; sourceTree = "<group>"; };
+		BFF090B30C5C53C6008D427F /* GCTableView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GCTableView.m; path = Code/GCTableView.m; sourceTree = "<group>"; };
+		BFFC4F6E0DA0F9E1003E1655 /* square.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = square.tif; path = Resources/Images/square.tif; sourceTree = "<group>"; };
+		BFFC4F6F0DA0F9E1003E1655 /* round.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = round.tif; path = Resources/Images/round.tif; sourceTree = "<group>"; };
+		BFFC4F700DA0F9E1003E1655 /* butt.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = butt.tif; path = Resources/Images/butt.tif; sourceTree = "<group>"; };
+		BFFC4F820DA0FF95003E1655 /* squarecorner.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = squarecorner.tif; path = Resources/Images/squarecorner.tif; sourceTree = "<group>"; };
+		BFFC4F830DA0FF95003E1655 /* roundcorner.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = roundcorner.tif; path = Resources/Images/roundcorner.tif; sourceTree = "<group>"; };
+		BFFC4F8E0DA1048B003E1655 /* bevelcorner.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = bevelcorner.tif; path = Resources/Images/bevelcorner.tif; sourceTree = "<group>"; };
+		BFFC4FC10DA19786003E1655 /* GCLinearDuplicateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCLinearDuplicateController.h; path = Code/GCLinearDuplicateController.h; sourceTree = "<group>"; };
+		BFFC4FC20DA19786003E1655 /* GCLinearDuplicateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCLinearDuplicateController.m; path = Code/GCLinearDuplicateController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				AA89A4B10D7E0D2D0092F050 /* GCDrawKit.framework in Frameworks */,
+				965B6AD00C28ACDB00FFCC95 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				965B6ACF0C28ACDB00FFCC95 /* QuartzCore.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* GCDrawDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* GCDrawDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */,
+				AA8073650DA49912005BCAA0 /* DrawDemoInfo.plist */,
+				AA89A4550D7E03B90092F050 /* DrawKit.xcodeproj */,
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = GCDrawDemo;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF58CFE00C7526A6009B85CC /* GP for GCDrawDemo */,
+				BFF06B1D0C3892F3008D427F /* DrawingSizeController.h */,
+				BFF06B1E0C3892F3008D427F /* DrawingSizeController.m */,
+				BFA967090D7580BC00D976CB /* GCBasicDialogController.h */,
+				BFA967080D7580BC00D976CB /* GCBasicDialogController.m */,
+				BFF090930C5C4ECF008D427F /* GCCheckboxCell.h */,
+				BFF090940C5C4ECF008D427F /* GCCheckboxCell.m */,
+				BF70193F0BFD8A3900080B21 /* GCDashEditor.h */,
+				BF7019400BFD8A3900080B21 /* GCDashEditor.m */,
+				BF701A090BFDAAD800080B21 /* GCDashEditView.h */,
+				BF701A0A0BFDAAD800080B21 /* GCDashEditView.m */,
+				96F5177A0B8A72760047BA96 /* GCDrawKitAppDelegate.h */,
+				96F5177B0B8A72760047BA96 /* GCDrawKitAppDelegate.m */,
+				BFF08D5A0C583808008D427F /* GCLayersPaletteController.h */,
+				BFF08D5B0C583808008D427F /* GCLayersPaletteController.m */,
+				BFF06D340C3B5204008D427F /* GCObjectInspector.h */,
+				BFF06D330C3B5204008D427F /* GCObjectInspector.m */,
+				BFDB12440C2B81630034C27C /* GCPolarDuplicateController.h */,
+				BFDB12430C2B81630034C27C /* GCPolarDuplicateController.m */,
+				BFFC4FC10DA19786003E1655 /* GCLinearDuplicateController.h */,
+				BFFC4FC20DA19786003E1655 /* GCLinearDuplicateController.m */,
+				BF700E1C0BF6B59F00080B21 /* GCStyleInspector.h */,
+				BF700E1D0BF6B59F00080B21 /* GCStyleInspector.m */,
+				BFF08EC30C58CE4A008D427F /* GCStyleManagerDialog.h */,
+				BFF08EC40C58CE4A008D427F /* GCStyleManagerDialog.m */,
+				BFF090B20C5C53C6008D427F /* GCTableView.h */,
+				BFF090B30C5C53C6008D427F /* GCTableView.m */,
+				BFAA66470DBEDDE500EE8236 /* GCOutlineView.h */,
+				BFAA66480DBEDDE500EE8236 /* GCOutlineView.m */,
+				BF88FC9A0C1D0CA100A23755 /* GCToolPalette.h */,
+				BF88FC9B0C1D0CA100A23755 /* GCToolPalette.m */,
+				2A37F4AEFDCFA73011CA2CEA /* GCDrawDemoDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* GCDrawDemoDocument.m */,
+				BFF071640C3FAE8D008D427F /* GCDrawDemoDocument+TimelineLayout.h */,
+				BFF071650C3FAE8D008D427F /* GCDrawDemoDocument+TimelineLayout.m */,
+				BF8726570D91E3FC001F09AC /* GCDrawDemoPrefsController.h */,
+				BF8726560D91E3FC001F09AC /* GCDrawDemoPrefsController.m */,
+				BF9515790DBB6E03009E8CEC /* RSVerticallyCenteredTextFieldCell.h */,
+				BF95157A0DBB6E03009E8CEC /* RSVerticallyCenteredTextFieldCell.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* DrawDemo_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA89A4430D7E02810092F050 /* Images */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				AA7431D20D80FF3D0013CA82 /* DKGraphicInspector.xib */,
+				AA7431D60D80FF830013CA82 /* Drawingsize.xib */,
+				AA206DD20D90A0E6003205BD /* GCDrawDemoDocument.xib */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				AA7431E00D8101230013CA82 /* LayersPalette.xib */,
+				AA7431E30D81015B0013CA82 /* MainMenu.xib */,
+				AA7431E90D8101660013CA82 /* ObjectInspector.xib */,
+				AA7431EC0D81016B0013CA82 /* StyleInspector.xib */,
+				AA7431EF0D8101720013CA82 /* StyleManager.xib */,
+				AA7431F20D8101790013CA82 /* ToolPalette.xib */,
+				BF8726590D91E53B001F09AC /* Preferences.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA89A4430D7E02810092F050 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAF52B0DAE31FB002972BC /* dkicon.icns */,
+				BFEAF5420DAE3586002972BC /* dkdocument.icns */,
+				BFBFD09E0D9A4B2000680E6B /* mag_minus.tiff */,
+				BFBFD09F0D9A4B2000680E6B /* mag_plus.tiff */,
+				BFDB10ED0C2AACC20034C27C /* Arc.pdf */,
+				BF88FD960C1D680500A23755 /* Delete Path Point.png */,
+				BF88FD8E0C1D662100A23755 /* Freehand.png */,
+				BF701D510C002C2E00080B21 /* gear.tif */,
+				BF88FD940C1D67F600A23755 /* Insert Path Point.png */,
+				BF88FD7F0C1D630A00A23755 /* Line.png */,
+				BF7012BF0BF7FDB800080B21 /* minus-8.png */,
+				BF7010AF0BF7122E00080B21 /* NSColorWheelImage.tiff */,
+				BF88FD710C1D606300A23755 /* Oval.png */,
+				BF88FD820C1D63CC00A23755 /* Path.png */,
+				BF7012BE0BF7FDB800080B21 /* plus-8.png */,
+				BF88FD7D0C1D62A000A23755 /* Polygon.png */,
+				BF88FD6E0C1D5FB100A23755 /* Rectangle.png */,
+				BF88FD850C1D645200A23755 /* Ring.png */,
+				BF88FD7A0C1D621B00A23755 /* Round End Rectangle.png */,
+				BF88FD770C1D618800A23755 /* Round Rectangle.png */,
+				BF88FD910C1D670400A23755 /* Select.png */,
+				BF7010AD0BF7122600080B21 /* smallBlueKnob.tiff */,
+				BF88FD8B0C1D655900A23755 /* Speech Balloon.png */,
+				BF88FD880C1D64F200A23755 /* Text.png */,
+				BFFC4F6E0DA0F9E1003E1655 /* square.tif */,
+				BFFC4F6F0DA0F9E1003E1655 /* round.tif */,
+				BFFC4F700DA0F9E1003E1655 /* butt.tif */,
+				BFFC4F820DA0FF95003E1655 /* squarecorner.tif */,
+				BFFC4F830DA0FF95003E1655 /* roundcorner.tif */,
+				BFFC4F8E0DA1048B003E1655 /* bevelcorner.tif */,
+				BF9517D30DBCCA07009E8CEC /* locked_symbol.tiff */,
+				BF9517A30DBCC4EE009E8CEC /* menu_triangle.tiff */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AA89A4560D7E03B90092F050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA89A45E0D7E03B90092F050 /* GCDrawKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF58CFE00C7526A6009B85CC /* GP for GCDrawDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BF58CFE10C7526A6009B85CC /* DKGradientCell.h */,
+				BF58CFE20C7526A6009B85CC /* DKGradientCell.m */,
+				BF58CFE30C7526A6009B85CC /* GCColourPickerView.h */,
+				BF58CFE40C7526A6009B85CC /* GCColourPickerView.m */,
+				BF58CFE50C7526A6009B85CC /* GCGradientCell.h */,
+				BF58CFE60C7526A6009B85CC /* GCGradientCell.m */,
+				BF58CFE90C7526A6009B85CC /* GCGradientPasteboard.h */,
+				BF58CFEA0C7526A6009B85CC /* GCGradientPasteboard.m */,
+				BF58CFEB0C7526A6009B85CC /* GCGradientWell.h */,
+				BF58CFEC0C7526A6009B85CC /* GCGradientWell.m */,
+				BF58CFED0C7526A6009B85CC /* GCMiniCircularSlider.h */,
+				BF58CFEE0C7526A6009B85CC /* GCMiniCircularSlider.m */,
+				BF58CFEF0C7526A6009B85CC /* GCMiniControl.h */,
+				BF58CFF00C7526A6009B85CC /* GCMiniControl.m */,
+				BF58CFF10C7526A6009B85CC /* GCMiniControlCluster.h */,
+				BF58CFF20C7526A6009B85CC /* GCMiniControlCluster.m */,
+				BF58CFF30C7526A6009B85CC /* GCMiniRadialControl2.h */,
+				BF58CFF40C7526A6009B85CC /* GCMiniRadialControl2.m */,
+				BF58CFF50C7526A6009B85CC /* GCMiniRadialControls.h */,
+				BF58CFF60C7526A6009B85CC /* GCMiniRadialControls.m */,
+				BF58CFF70C7526A6009B85CC /* GCMiniSlider.h */,
+				BF58CFF80C7526A6009B85CC /* GCMiniSlider.m */,
+				BF58CFF90C7526A6009B85CC /* GCSpecialColorWell.h */,
+				BF58CFFA0C7526A6009B85CC /* GCSpecialColorWell.m */,
+				BF58CFFB0C7526A6009B85CC /* GCWindowMenu.h */,
+				BF58CFFC0C7526A6009B85CC /* GCWindowMenu.m */,
+				BF58CFFD0C7526A6009B85CC /* NSBezierPath+GCAdditions.h */,
+				BF58CFFE0C7526A6009B85CC /* NSBezierPath+GCAdditions.m */,
+				BF58CFFF0C7526A6009B85CC /* NSFolderManagerAdditions.h */,
+				BF58D0000C7526A6009B85CC /* NSFolderManagerAdditions.m */,
+				BF58D0010C7526A6009B85CC /* WTGradientControl.h */,
+				BF58D0020C7526A6009B85CC /* WTGradientControl.m */,
+				BF58D0030C7526A6009B85CC /* WTPlistKeyValueCoding.h */,
+				BF58D0040C7526A6009B85CC /* WTPlistKeyValueCoding.m */,
+			);
+			name = "GP for GCDrawDemo";
+			path = "Code/GP for GCDrawDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* DrawDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "DrawDemo" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+				AA89A27A0D7DCB800092F050 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA89A4620D7E03D00092F050 /* PBXTargetDependency */,
+			);
+			name = DrawDemo;
+			productInstallPath = "$(HOME)/Applications";
+			productName = GCDrawDemo;
+			productReference = 8D15AC370486D014006FF6A4 /* GCDrawDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "DrawDemo" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* GCDrawDemo */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AA89A4560D7E03B90092F050 /* Products */;
+					ProjectRef = AA89A4550D7E03B90092F050 /* DrawKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* DrawDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AA89A45E0D7E03B90092F050 /* GCDrawKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GCDrawKit.framework;
+			remoteRef = AA89A45D0D7E03B90092F050 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				BF7010AE0BF7122600080B21 /* smallBlueKnob.tiff in Resources */,
+				BF7010B00BF7122E00080B21 /* NSColorWheelImage.tiff in Resources */,
+				BF7012C00BF7FDB800080B21 /* plus-8.png in Resources */,
+				BF7012C10BF7FDB800080B21 /* minus-8.png in Resources */,
+				BF701D520C002C2E00080B21 /* gear.tif in Resources */,
+				BF88FD6F0C1D5FB100A23755 /* Rectangle.png in Resources */,
+				BF88FD720C1D606300A23755 /* Oval.png in Resources */,
+				BF88FD780C1D618800A23755 /* Round Rectangle.png in Resources */,
+				BF88FD7B0C1D621B00A23755 /* Round End Rectangle.png in Resources */,
+				BF88FD7E0C1D62A000A23755 /* Polygon.png in Resources */,
+				BF88FD800C1D630A00A23755 /* Line.png in Resources */,
+				BF88FD830C1D63CC00A23755 /* Path.png in Resources */,
+				BF88FD860C1D645200A23755 /* Ring.png in Resources */,
+				BF88FD890C1D64F200A23755 /* Text.png in Resources */,
+				BF88FD8C0C1D655900A23755 /* Speech Balloon.png in Resources */,
+				BF88FD8F0C1D662100A23755 /* Freehand.png in Resources */,
+				BF88FD920C1D670400A23755 /* Select.png in Resources */,
+				BF88FD950C1D67F600A23755 /* Insert Path Point.png in Resources */,
+				BF88FD970C1D680500A23755 /* Delete Path Point.png in Resources */,
+				BFDB10EE0C2AACC20034C27C /* Arc.pdf in Resources */,
+				AA7431D40D80FF3D0013CA82 /* DKGraphicInspector.xib in Resources */,
+				AA7431D80D80FF830013CA82 /* Drawingsize.xib in Resources */,
+				AA7431E20D8101230013CA82 /* LayersPalette.xib in Resources */,
+				AA7431E50D81015B0013CA82 /* MainMenu.xib in Resources */,
+				AA7431EB0D8101660013CA82 /* ObjectInspector.xib in Resources */,
+				AA7431EE0D81016B0013CA82 /* StyleInspector.xib in Resources */,
+				AA7431F10D8101720013CA82 /* StyleManager.xib in Resources */,
+				AA7431F40D8101790013CA82 /* ToolPalette.xib in Resources */,
+				AA206DD40D90A0E6003205BD /* GCDrawDemoDocument.xib in Resources */,
+				BF87265B0D91E53B001F09AC /* Preferences.xib in Resources */,
+				BFBFD0A00D9A4B2000680E6B /* mag_minus.tiff in Resources */,
+				BFBFD0A10D9A4B2000680E6B /* mag_plus.tiff in Resources */,
+				BFFC4F710DA0F9E1003E1655 /* square.tif in Resources */,
+				BFFC4F720DA0F9E1003E1655 /* round.tif in Resources */,
+				BFFC4F730DA0F9E1003E1655 /* butt.tif in Resources */,
+				BFFC4F850DA0FF95003E1655 /* squarecorner.tif in Resources */,
+				BFFC4F860DA0FF95003E1655 /* roundcorner.tif in Resources */,
+				BFFC4F8F0DA1048B003E1655 /* bevelcorner.tif in Resources */,
+				AA80733E0DA4951B005BCAA0 /* DrawDemo.xcconfig in Resources */,
+				AA8073660DA49912005BCAA0 /* DrawDemoInfo.plist in Resources */,
+				BFEAF52C0DAE31FB002972BC /* dkicon.icns in Resources */,
+				BFEAF5430DAE3586002972BC /* dkdocument.icns in Resources */,
+				BF9517A40DBCC4EE009E8CEC /* menu_triangle.tiff in Resources */,
+				BF9517D40DBCCA07009E8CEC /* locked_symbol.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC310486D014006FF6A4 /* GCDrawDemoDocument.m in Sources */,
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				96F5177E0B8A72760047BA96 /* GCDrawKitAppDelegate.m in Sources */,
+				BF700E1F0BF6B59F00080B21 /* GCStyleInspector.m in Sources */,
+				BF7019420BFD8A3900080B21 /* GCDashEditor.m in Sources */,
+				BF701A0C0BFDAAD800080B21 /* GCDashEditView.m in Sources */,
+				BF88FC9D0C1D0CA100A23755 /* GCToolPalette.m in Sources */,
+				BFDB12450C2B81630034C27C /* GCPolarDuplicateController.m in Sources */,
+				BFF06B200C3892F3008D427F /* DrawingSizeController.m in Sources */,
+				BFF06D350C3B5204008D427F /* GCObjectInspector.m in Sources */,
+				BFF071670C3FAE8D008D427F /* GCDrawDemoDocument+TimelineLayout.m in Sources */,
+				BFF08D5D0C583808008D427F /* GCLayersPaletteController.m in Sources */,
+				BFF08EC60C58CE4A008D427F /* GCStyleManagerDialog.m in Sources */,
+				BFF090960C5C4ECF008D427F /* GCCheckboxCell.m in Sources */,
+				BFF090B50C5C53C6008D427F /* GCTableView.m in Sources */,
+				BF58D0060C7526A6009B85CC /* DKGradientCell.m in Sources */,
+				BF58D0080C7526A6009B85CC /* GCColourPickerView.m in Sources */,
+				BF58D00A0C7526A6009B85CC /* GCGradientCell.m in Sources */,
+				BF58D00E0C7526A6009B85CC /* GCGradientPasteboard.m in Sources */,
+				BF58D0100C7526A6009B85CC /* GCGradientWell.m in Sources */,
+				BF58D0120C7526A6009B85CC /* GCMiniCircularSlider.m in Sources */,
+				BF58D0140C7526A6009B85CC /* GCMiniControl.m in Sources */,
+				BF58D0160C7526A6009B85CC /* GCMiniControlCluster.m in Sources */,
+				BF58D0180C7526A6009B85CC /* GCMiniRadialControl2.m in Sources */,
+				BF58D01A0C7526A6009B85CC /* GCMiniRadialControls.m in Sources */,
+				BF58D01C0C7526A6009B85CC /* GCMiniSlider.m in Sources */,
+				BF58D01E0C7526A6009B85CC /* GCSpecialColorWell.m in Sources */,
+				BF58D0200C7526A6009B85CC /* GCWindowMenu.m in Sources */,
+				BF58D0220C7526A6009B85CC /* NSBezierPath+GCAdditions.m in Sources */,
+				BF58D0240C7526A6009B85CC /* NSFolderManagerAdditions.m in Sources */,
+				BF58D0260C7526A6009B85CC /* WTGradientControl.m in Sources */,
+				BF58D0280C7526A6009B85CC /* WTPlistKeyValueCoding.m in Sources */,
+				BFA9670A0D7580BC00D976CB /* GCBasicDialogController.m in Sources */,
+				BF8726580D91E3FC001F09AC /* GCDrawDemoPrefsController.m in Sources */,
+				BFFC4FC30DA19786003E1655 /* GCLinearDuplicateController.m in Sources */,
+				BF95157B0DBB6E03009E8CEC /* RSVerticallyCenteredTextFieldCell.m in Sources */,
+				BFAA66490DBEDDE500EE8236 /* GCOutlineView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA89A4620D7E03D00092F050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DrawKit;
+			targetProxy = AA89A4610D7E03D00092F050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* InfoPlist.strings */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AA206DD20D90A0E6003205BD /* GCDrawDemoDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA206DD30D90A0E6003205BD /* English */,
+			);
+			name = GCDrawDemoDocument.xib;
+			sourceTree = "<group>";
+		};
+		AA7431D20D80FF3D0013CA82 /* DKGraphicInspector.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7431D30D80FF3D0013CA82 /* English */,
+			);
+			name = DKGraphicInspector.xib;
+			sourceTree = "<group>";
+		};
+		AA7431D60D80FF830013CA82 /* Drawingsize.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7431D70D80FF830013CA82 /* English */,
+			);
+			name = Drawingsize.xib;
+			sourceTree = "<group>";
+		};
+		AA7431E00D8101230013CA82 /* LayersPalette.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7431E10D8101230013CA82 /* English */,
+			);
+			name = LayersPalette.xib;
+			sourceTree = "<group>";
+		};
+		AA7431E30D81015B0013CA82 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7431E40D81015B0013CA82 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AA7431E90D8101660013CA82 /* ObjectInspector.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7431EA0D8101660013CA82 /* English */,
+			);
+			name = ObjectInspector.xib;
+			sourceTree = "<group>";
+		};
+		AA7431EC0D81016B0013CA82 /* StyleInspector.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7431ED0D81016B0013CA82 /* English */,
+			);
+			name = StyleInspector.xib;
+			sourceTree = "<group>";
+		};
+		AA7431EF0D8101720013CA82 /* StyleManager.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7431F00D8101720013CA82 /* English */,
+			);
+			name = StyleManager.xib;
+			sourceTree = "<group>";
+		};
+		AA7431F20D8101790013CA82 /* ToolPalette.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7431F30D8101790013CA82 /* English */,
+			);
+			name = ToolPalette.xib;
+			sourceTree = "<group>";
+		};
+		BF8726590D91E53B001F09AC /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF87265A0D91E53B001F09AC /* English */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF02FFE70D9076B6006A3F0C /* Debug (10.4u SDK) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					qDebug,
+					"$(GCC_PREPROCESSOR_DEFINITIONS)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../../../DrawKit/Trunk/Source/build/Debug/GCDrawKit.framework/**";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = ../../../DrawKit/Trunk/Source/build;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wcast-align",
+					"-Wchar-subscripts",
+					"-Wextra",
+					"-Wextra-tokens",
+					"-Wformat=2",
+					"-Wmissing-field-initializers",
+					"-Wpointer-arith",
+					"-Wshadow",
+					"-Wswitch-default",
+					"-Wundef",
+					"-Wwrite-strings",
+					"-W",
+				);
+			};
+			name = "Debug (10.4u SDK)";
+		};
+		BF02FFE80D9076B6006A3F0C /* Debug (10.4u SDK) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../DrawKit/Trunk/Source/build/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../../Library/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../../../DrawKit/Trunk/Source/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/../../../../../Shared/DevBuilds/Debug\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Code/DrawDemo_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = DrawDemoInfo.plist;
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
+					"BUNDLE_ID_=net.apptree.gcdrawdemo",
+					"VERSION_POSTFIX_=(Debug_10.4uSDK)",
+				);
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = GCDrawDemo;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = "Debug (10.4u SDK)";
+		};
+		BF02FFE90D9076C0006A3F0C /* Release (10.4u SDK) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "$(GCC_PREPROCESSOR_DEFINITIONS)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../../../DrawKit/Trunk/Source/build/Release/GCDrawKit.framework/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = ../../../DrawKit/Trunk/Source/build;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wcast-align",
+					"-Wchar-subscripts",
+					"-Wextra",
+					"-Wextra-tokens",
+					"-Wformat=2",
+					"-Wmissing-field-initializers",
+					"-Wpointer-arith",
+					"-Wshadow",
+					"-Wswitch-default",
+					"-Wundef",
+					"-Wwrite-strings",
+					"-W",
+				);
+			};
+			name = "Release (10.4u SDK)";
+		};
+		BF02FFEA0D9076C0006A3F0C /* Release (10.4u SDK) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../DrawKit/Trunk/Source/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../../../Shared/DevBuilds/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../DrawKit/Trunk/Source/build/Debug\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Code/DrawDemo_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = DrawDemoInfo.plist;
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
+					"BUNDLE_ID_=net.apptree.gcdrawdemo",
+					"VERSION_POSTFIX_=(10.4uSDK)",
+				);
+				INSTALL_PATH = "$(HOME)/Applications";
+				KEEP_PRIVATE_EXTERNS = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = GCDrawDemo;
+				SYMROOT = ../../../DrawKit/Trunk/Source/build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Release (10.4u SDK)";
+		};
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../DrawKit/Trunk/Source/build/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../../Library/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../../../DrawKit/Trunk/Source/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/../../../../../Shared/DevBuilds/Debug\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Code/DrawDemo_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = DrawDemoInfo.plist;
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
+					"BUNDLE_ID_=net.apptree.gcdrawdemo",
+					"VERSION_POSTFIX_=(Debug)",
+				);
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = GCDrawDemo;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../DrawKit/Trunk/Source/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../../../Shared/DevBuilds/Debug\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../DrawKit/Trunk/Source/build/Debug\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Code/DrawDemo_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = DrawDemoInfo.plist;
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
+					"BUNDLE_ID_=net.apptree.gcdrawdemo",
+					"VERSION_POSTFIX_=",
+				);
+				INSTALL_PATH = "$(HOME)/Applications";
+				KEEP_PRIVATE_EXTERNS = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = GCDrawDemo;
+				SYMROOT = ../../../DrawKit/Trunk/Source/build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					qDebug,
+					"$(GCC_PREPROCESSOR_DEFINITIONS)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../../../DrawKit/Trunk/Source/build/Debug/GCDrawKit.framework/**";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SYMROOT = ../../../DrawKit/Trunk/Source/build;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wcast-align",
+					"-Wchar-subscripts",
+					"-Wextra",
+					"-Wextra-tokens",
+					"-Wformat=2",
+					"-Wmissing-field-initializers",
+					"-Wpointer-arith",
+					"-Wshadow",
+					"-Wswitch-default",
+					"-Wundef",
+					"-Wwrite-strings",
+					"-W",
+				);
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80733D0DA4951B005BCAA0 /* DrawDemo.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "$(GCC_PREPROCESSOR_DEFINITIONS)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../../../DrawKit/Trunk/Source/build/Release/GCDrawKit.framework/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SYMROOT = ../../../DrawKit/Trunk/Source/build;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wcast-align",
+					"-Wchar-subscripts",
+					"-Wextra",
+					"-Wextra-tokens",
+					"-Wformat=2",
+					"-Wmissing-field-initializers",
+					"-Wpointer-arith",
+					"-Wshadow",
+					"-Wswitch-default",
+					"-Wundef",
+					"-Wwrite-strings",
+					"-W",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "DrawDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				BF02FFE80D9076B6006A3F0C /* Debug (10.4u SDK) */,
+				C05733C908A9546B00998B17 /* Release */,
+				BF02FFEA0D9076C0006A3F0C /* Release (10.4u SDK) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "DrawDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				BF02FFE70D9076B6006A3F0C /* Debug (10.4u SDK) */,
+				C05733CD08A9546B00998B17 /* Release */,
+				BF02FFE90D9076C0006A3F0C /* Release (10.4u SDK) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

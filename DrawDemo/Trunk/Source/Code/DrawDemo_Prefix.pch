@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'GCDrawDemo' target in the 'GCDrawDemo' project
+//
+
+#ifndef qDebug
+	#define NS_BLOCK_ASSERTIONS
+	#define NDEBUG
+#endif
+
+// To verify this project does not rely on symbols unavailable in its minimum OS version (i.e., its MACOSX_DEPLOYMENT_TARGET), temporarily set the following constant to 1 and rebuild all configurations from scratch. You will get a warning you are doing the test, but all other warnings indicate use of something beyond what is available in this project's minimum OS.
+#if 0
+	#define MAC_OS_X_VERSION_MAX_ALLOWED MAC_OS_X_VERSION_MIN_REQUIRED
+	#warning Verifying symbol availability in minimum OS. All warnings besides this one indicate use of something beyond what is available in the project's minimum OS. You should not see this warning when building a release version for customers.
+#endif
+
+#define qUseLogEvent
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

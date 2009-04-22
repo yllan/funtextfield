@@ -1,0 +1,22 @@
+// single line comment
+//[target go: 124 with:(1..9) num:1,298,99 int:87 float:1,299.987]
+
+(list all:#('some other string'))
+
+// another single line comment
+
+/*
+(list "some string")
+*/
+
+(do with:1,345.99 and: "some string")
+(list it:'some other string')
+(bar)
+(foo a:1 str:"one" rest:#(189.89 3 4))
+
+(nest one:(egg a: 1 b:2) two:2)
+
+(list 1 2 4)
+(nest (egg a:1 b:2))
+(info dict:(a: 1 b: 2) hex: 0xAF8)
+

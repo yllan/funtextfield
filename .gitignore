@@ -4,3 +4,7 @@
 *.mode1v3
 *.pbxuser
 build/
+CoreTextArc/
+DrawDemo/
+DrawKit/
+DrawkitSimplerDemo/
